@@ -21,7 +21,7 @@ workers_dev = true
 
 # ── Cron trigger — cleanup runs every hour ──────────────────
 [triggers]
-crons = ["0 * * * *"]
+crons = ["0 0 * * *"]
 
 # ── R2 bucket binding ────────────────────────────────────────
 # Created by: wrangler r2 bucket create filedrop-files
@@ -34,7 +34,7 @@ bucket_name = "filedrop-files"
 # Paste the returned id below (replaces the placeholder).
 [[kv_namespaces]]
 binding = "FILEDROP_KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "09663d80698d40b2a23be78ef626b309"
 
 # ── Optional environment variables ──────────────────────────
 # Defaults live in worker.js (CONFIG block). Override there or wire
